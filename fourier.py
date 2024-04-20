@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 # Load your data from file
 # Replace 'your_data_file.txt' with the path to your data file
-data = np.loadtxt('your_data_file.txt')
+data = np.loadtxt('synthetic_signal_two_tones.txt')
 
 # Extract time and signal from the data
 time = data[:, 0]  # assuming time is in the first column
@@ -16,7 +16,7 @@ fft_vals = np.fft.fft(signal)  # Compute FFT
 
 # Plot the frequency spectrum
 plt.figure(figsize=(10, 5))
-plt.plot(freqs, np.abs(fft_vals))
+plt.plot(np.abs(freqs), np.abs(fft_vals))
 plt.title('Frequency Spectrum')
 plt.xlabel('Frequency (Hz)')
 plt.ylabel('Amplitude')

@@ -26,12 +26,12 @@ def write_to_excel(file_path, sheet_name, data):
 
 # Example usage
 file_path = "example.xlsx"
-sheet_name = "Sheet1"
+sheet_name = "plum"
 data = [
-    ["Name", "Age", "City"],
-    ["John", 30, "New York"],
-    ["Alice", 25, "Los Angeles"],
-    ["Bob", 35, "Chicago"]
+    ["gah", "goo", "City"],
+    ["John", 45, "New York"],
+    ["Alice", 100, "Boston"],
+    ["Bob", 35, "rim"]
 ]
 
 write_to_excel(file_path, sheet_name, data)
